@@ -61,8 +61,3 @@ def recommand():
     recommended_lawyers.append(data[index])
    print(recommended_lawyers)
    return jsonify(recommended_lawyers)
-
-if __name__ == '__main__':
-   #  ngrok_tunnel = ngrok.connect(5000)
-   #  print('Public URL:', ngrok_tunnel.public_url)
-    app.run(port=5000)
