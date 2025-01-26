@@ -41,7 +41,7 @@ def recommand():
     data.append({
         'id': str(document['_id']),
         'name': document['name'],
-        'tags': document['tags'],
+        'tags': document.get('tags', ''),
     })
     # Return the data as JSON
 
